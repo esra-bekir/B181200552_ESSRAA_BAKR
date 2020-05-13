@@ -8,7 +8,7 @@
 ** PROJE NUMARASI.........: Proje
 ** ÖĞRENCİ ADI............: ESSRAA BAKR
 ** ÖĞRENCİ NUMARASI.......: B181200552
-** DERSİN ALINDIĞI GRUP...: A
+** DERSİN ALINDIĞI GRUP...: A 
 ****************************************************************************/
 using System;
 using System.Collections.Generic;
@@ -50,6 +50,11 @@ namespace WindowsFormsApp18.Properties
         }
 
         private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
         {
 
         }
