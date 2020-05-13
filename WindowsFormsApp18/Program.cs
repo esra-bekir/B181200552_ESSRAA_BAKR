@@ -1,14 +1,14 @@
 ﻿/****************************************************************************
-** SAKARYA ÜNİVERSİTESİ
-** BİLGİSAYAR VE BİLİŞİM BİLİMLERİ FAKÜLTESİ
-** BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞİ BÖLÜMÜ
-** NESNEYE DAYALI PROGRAMLAMA DERSİ
-** 2019-2020 BAHAR DÖNEMİ
+**                          SAKARYA ÜNİVERSİTESİ
+**               BİLGİSAYAR VE BİLİŞİM BİLİMLERİ FAKÜLTESİ
+**                 BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞİ BÖLÜMÜ
+**                    NESNEYE DAYALI PROGRAMLAMA DERSİ
+**                         2019-2020 BAHAR DÖNEMİ
 **
-** PROJE NUMARASI.........: Proje
-** ÖĞRENCİ ADI............: ESSRAA BAKR
-** ÖĞRENCİ NUMARASI.......: B181200552
-** DERSİN ALINDIĞI GRUP...: A
+**                     PROJE NUMARASI.........:2-Proje
+**                     ÖĞRENCİ ADI............: ESSRAA BAKR
+**                     ÖĞRENCİ NUMARASI.......: B181200552
+**                     DERSİN ALINDIĞI GRUP...: A
 ****************************************************************************/
 using System;
 using System.Collections.Generic;

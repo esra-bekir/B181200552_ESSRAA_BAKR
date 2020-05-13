@@ -1,14 +1,14 @@
 ﻿/****************************************************************************
-** SAKARYA ÜNİVERSİTESİ
-** BİLGİSAYAR VE BİLİŞİM BİLİMLERİ FAKÜLTESİ
-** BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞİ BÖLÜMÜ
-** NESNEYE DAYALI PROGRAMLAMA DERSİ
-** 2019-2020 BAHAR DÖNEMİ
+**                             SAKARYA ÜNİVERSİTESİ
+**                  BİLGİSAYAR VE BİLİŞİM BİLİMLERİ FAKÜLTESİ
+**                   BİLİŞİM SİSTEMLERİ MÜHENDİSLİĞİ BÖLÜMÜ
+**                      NESNEYE DAYALI PROGRAMLAMA DERSİ
+**                       2019-2020 BAHAR DÖNEMİ
 **
-** PROJE NUMARASI.........: Proje
-** ÖĞRENCİ ADI............: ESSRAA BAKR
-** ÖĞRENCİ NUMARASI.......: B181200552
-** DERSİN ALINDIĞI GRUP...: A
+**                         PROJE NUMARASI.........:2_ Proje
+**                          ÖĞRENCİ ADI............: ESSRAA BAKR
+**                           ÖĞRENCİ NUMARASI.......: B181200552
+**                               DERSİN ALINDIĞI GRUP...: A
 ****************************************************************************/
 using System;
 using System.Collections.Generic;
@@ -20,6 +20,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Drawing.Text;
 
 namespace WindowsFormsApp18.Properties
 {
@@ -60,52 +61,52 @@ namespace WindowsFormsApp18.Properties
         private void Form2_Load(object sender, EventArgs e)
         {
             cheeseburger = new FastfoodYemekleri();
-            cheeseburger.setAgirlik(100);
+            cheeseburger.setAgirlik(100); //Private/ OLARAK TANIMLADIĞIMIZ İÇİN set ve geti kullandık
             cheeseburger.setKalori(303.1f);
             cheeseburger.setFiyat(18.99f);
             cheeseburger.kolesterol = 41;
             cheeseburger.Kalsiyum = 191;
             cheeseburger.alarji_yapabilecek_urunler = "yumurta\npatates\ndomates\nbiber ";
 
-            label1.Text = cheeseburger.agirlik.ToString();
-            label2.Text = cheeseburger.kalori.ToString();
-            label3.Text = cheeseburger.kolesterol.ToString();
-            label6.Text = cheeseburger.Kalsiyum.ToString();
-            richTextBox1.Text = cheeseburger.alarji_yapabilecek_urunler.ToString();
+            label1.Text = cheeseburger.agirlik.ToString();//labılara yazdırma işlemi
+            label2.Text = cheeseburger.kalori.ToString();//labılara yazdırma işlemi
+            label3.Text = cheeseburger.kolesterol.ToString();//labılara yazdırma işlemi
+            label6.Text = cheeseburger.Kalsiyum.ToString();//labılara yazdırma işlemi
+            richTextBox1.Text = cheeseburger.alarji_yapabilecek_urunler.ToString();//labılara yazdırma işlemi
 
             pizza = new FastfoodYemekleri();
-            pizza.setAgirlik(100);
-            pizza.setFiyat(29.99F);
-            pizza.setKalori(266);
+            pizza.setAgirlik(100);//setagrılığı privet olarak tanımladığımız için kullandık
+            pizza.setFiyat(29.99F);//setfiyat privet olarak tanımladığımız için kullandık
+            pizza.setKalori(266);//setakalori privet olarak tanımladığımız için kullandık
             pizza.kolesterol = 17;
             pizza.Kalsiyum = 188;
             pizza.alarji_yapabilecek_urunler = "yumurta\ndomates\nbiber ";
 
-            label4.Text = pizza.getAgirlik();
-            label5.Text = pizza.getKalori();
-            label16.Text = pizza.kolesterol.ToString();
-            label30.Text = pizza.Kalsiyum.ToString();
-            richTextBox2.Text = pizza.alarji_yapabilecek_urunler.ToString();
+            label4.Text = pizza.getAgirlik();//labılara yazdırma işlemi
+            label5.Text = pizza.getKalori();//labılara yazdırma işlemi
+            label16.Text = pizza.kolesterol.ToString();//labılara yazdırma işlemi
+            label30.Text = pizza.Kalsiyum.ToString();//labılara yazdırma işlemi
+            richTextBox2.Text = pizza.alarji_yapabilecek_urunler.ToString();//labılara yazdırma işlemi
 
-            nuget = new FastfoodYemekleri();
-            nuget.agirlik = 100;
-            nuget.kalori = 225;
-            nuget.setFiyat(14.99f); // bak buraya  simdi diyacaksin mademki fiyat bu sekilde ekleyebiliriz neden setFiyat() Kullaniyoruz 
+            nuget = new FastfoodYemekleri();//yeni nesne mirası kullanarak yemekler clasından getirdim 
+            nuget.agirlik = 100;//değer tanımlama
+            nuget.kalori = 225;//değer tanımlama
+            nuget.setFiyat(14.99f);  //  GENELDE class ozellikleri genelde private oluyr yani bu sekilde 
 
-            // CEVAP : GENELDE class ozellikleri genelde private oluyr yani bu sekilde 
+
             nuget.kolesterol = 17;
             nuget.Kalsiyum = 188;
             nuget.alarji_yapabilecek_urunler = "yumurta\ndomates\nbiber\nayçiçekyağı ";
 
 
-            label17.Text = nuget.agirlik.ToString();
-            label18.Text = nuget.kalori.ToString();
-            label19.Text = nuget.kolesterol.ToString();
-            label29.Text = nuget.Kalsiyum.ToString();
+            label17.Text = nuget.agirlik.ToString();//labılara yazdırma işlemi
+            label18.Text = nuget.kalori.ToString();//labılara yazdırma işlemi
+            label19.Text = nuget.kolesterol.ToString();//labılara yazdırma işlemi
+            label29.Text = nuget.Kalsiyum.ToString();//labılara yazdırma işlemi
             richTextBox3.Text = nuget.alarji_yapabilecek_urunler.ToString();
 
 
-            tatlılar anteplimakaron = new tatlılar();
+            tatlılar anteplimakaron = new tatlılar();//yeni nesne mirası kullanarak yemekler clasından getirdim hocam
             anteplimakaron.şekeroranı = "36 g";
             anteplimakaron.vitamenA = "330 IU";
             anteplimakaron.yapılış_tarihi = DateTime.Now.ToString();
@@ -116,27 +117,27 @@ namespace WindowsFormsApp18.Properties
             label82.Text = anteplimakaron.yapılış_tarihi.ToString();
             richTextBox5.Text = anteplimakaron.alarji_yapabilecek_urunler.ToString();
 
-            tatlılar dağtatlısı = new tatlılar();
-            dağtatlısı.şekeroranı = "50 g";
+            tatlılar dağtatlısı = new tatlılar();//yeni nesne mirası kullanarak yemekler clasından getirdim 
+            dağtatlısı.şekeroranı = "50 g";//değer atama
             dağtatlısı.vitamenA = "230 IU";
             dağtatlısı.yapılış_tarihi = DateTime.Now.ToString();
             dağtatlısı.alarji_yapabilecek_urunler = "fındık\nyumurta\n süt\nçikolata,\nçilek";
 
-            label90.Text = dağtatlısı.şekeroranı.ToString();
-            label92.Text = dağtatlısı.vitamenA.ToString();
+            label90.Text = dağtatlısı.şekeroranı.ToString();//convert işlemi double olarak tanımlamıştım
+            label92.Text = dağtatlısı.vitamenA.ToString();//convert işlemi double olarak tanımlamıştım
             label89.Text = dağtatlısı.yapılış_tarihi.ToString();
             richTextBox6.Text = dağtatlısı.alarji_yapabilecek_urunler.ToString();
 
-            tatlılar makaron = new tatlılar();
+            tatlılar makaron = new tatlılar();//yeni nesne mirası kullanarak yemekler clasından getirdim hocam
             makaron.şekeroranı = "43 gr";
             makaron.yapılış_tarihi = DateTime.Now.ToString();
             makaron.vitamenA = "280 IU";
             makaron.alarji_yapabilecek_urunler = "süt tozu\n fındık ";
 
-            label75.Text = makaron.şekeroranı.ToString();
+            label75.Text = makaron.şekeroranı.ToString();//convert işlemi double olarak tanımlamıştım
             label77.Text = makaron.vitamenA.ToString();
             label74.Text = makaron.yapılış_tarihi.ToString();
-            richTextBox4.Text = makaron.alarji_yapabilecek_urunler.ToString();
+            richTextBox4.Text = makaron.alarji_yapabilecek_urunler.ToString();//convert işlemi double olarak tanımlamıştım
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -149,7 +150,7 @@ namespace WindowsFormsApp18.Properties
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            GirisYap yeni = new GirisYap();
+            GirisYap yeni = new GirisYap();//giriş sekmesini geri dön
             this.Hide();
             yeni.Show();
         }
@@ -159,13 +160,13 @@ namespace WindowsFormsApp18.Properties
         int p_adet = 0;
         double PizzaTutari;
 
-        int c_adet = 0;
-        int N_adet = 0;
-        double NugetTutari = 0;
-        double ChessburgerTutari = 0;
+        int c_adet = 0;// globel değşken tanımlama
+        int N_adet = 0;// globel değşken tanımlama
+        double NugetTutari = 0;// globel değşken tanımlama
+        double ChessburgerTutari = 0;// globel değşken tanımlama
         private void button6_Click(object sender, EventArgs e)
         {
-
+            //butuna her tıklandığında adeti ve fiyatı arrtırsın
             c_adet += 1;
             tutar = c_adet * cheeseburger.getFiyat();
 
@@ -180,6 +181,8 @@ namespace WindowsFormsApp18.Properties
 
         private void button7_Click(object sender, EventArgs e)
         {
+            //butuna her tıklandığında adeti ve fiyatı azaltsın
+
             p_adet += 1;
             tutar = p_adet * pizza.getFiyat();
             PizzaTutari += pizza.getFiyat();
@@ -192,7 +195,7 @@ namespace WindowsFormsApp18.Properties
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            //butuna her tıklandığında adeti ve fiyatı arrtırsın
             N_adet += 1;
             tutar = N_adet * nuget.getFiyat();
             NugetTutari += nuget.getFiyat();
@@ -235,7 +238,7 @@ namespace WindowsFormsApp18.Properties
         {
             if (N_adet > 0)
             {
-
+                //butuna her tıklandığında adeti ve fiyatı azaltsın
                 N_adet--;
 
                 tutar = N_adet * nuget.getFiyat();
@@ -252,7 +255,7 @@ namespace WindowsFormsApp18.Properties
         {
             if (p_adet > 0)
             {
-
+                //butuna her tıklandığında adeti ve fiyatı azaltsın
                 p_adet--;
 
                     tutar = p_adet * pizza.getFiyat();
@@ -266,11 +269,12 @@ namespace WindowsFormsApp18.Properties
 
        
        
-        int m_adet = 0;
-        double makaronTutari;
-        double makaron = 24;
+        int m_adet = 0;//globel değşeken tanımlama
+        double makaronTutari;//globel değşeken tanımlama
+        double makaron = 24;//globel değşeken tanımlama
         private void button12_Click(object sender, EventArgs e)
         {
+            //butuna her tıklandığında adeti ve fiyatı  artırsın
             m_adet += 1;
             tutar = m_adet * makaron;
 
@@ -280,12 +284,13 @@ namespace WindowsFormsApp18.Properties
             label51.Text = m_adet.ToString();
             genel_tutar = makaronTutari;
         }
-        int anteplimakaron_adet = 0;
-        double Antepli_makaronTutari;
-        double Antepli_makaron = 24;
+        int anteplimakaron_adet = 0;//globel değşeken tanımlama
+        double Antepli_makaronTutari;//globel değşeken tanımlama
+        double Antepli_makaron = 24;//globel değşeken tanımlama
         private void button13_Click(object sender, EventArgs e)
         {
-           anteplimakaron_adet += 1;
+            //butuna her tıklandığında adeti ve fiyatı  artırsın
+            anteplimakaron_adet += 1;
             Antepli_makaronTutari = anteplimakaron_adet * makaron;
 
             Antepli_makaronTutari += Antepli_makaron;
@@ -304,6 +309,7 @@ namespace WindowsFormsApp18.Properties
         double Dağıtatliıs = 12;
         private void button9_Click(object sender, EventArgs e)
         {
+            //butuna her tıklandığında adeti ve fiyatı  artırsın
             Dgıtatlısı_adet += 1;
             DagıTutarı = Dgıtatlısı_adet * Dağıtatliıs;
 

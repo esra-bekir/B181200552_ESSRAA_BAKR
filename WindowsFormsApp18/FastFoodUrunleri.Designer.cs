@@ -31,6 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FastFoodUrunleri));
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
@@ -95,15 +104,6 @@
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -128,6 +128,10 @@
             this.label66 = new System.Windows.Forms.Label();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
@@ -142,6 +146,10 @@
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.label69 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
             this.button13 = new System.Windows.Forms.Button();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -155,16 +163,11 @@
             this.label71 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.label72 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -175,9 +178,6 @@
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
@@ -221,6 +221,113 @@
             this.panel1.Size = new System.Drawing.Size(325, 841);
             this.panel1.TabIndex = 16;
             // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Goldenrod;
+            this.button10.ForeColor = System.Drawing.Color.Gold;
+            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
+            this.button10.Location = new System.Drawing.Point(159, 565);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(42, 40);
+            this.button10.TabIndex = 63;
+            this.button10.Text = ".";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Black;
+            this.button5.Font = new System.Drawing.Font("Castellar", 13.8F, System.Drawing.FontStyle.Bold);
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(33, 427);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(274, 71);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Hakkımızda";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(33, 695);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(61, 65);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 20;
+            this.pictureBox9.TabStop = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Black;
+            this.button4.Font = new System.Drawing.Font("Castellar", 13.8F, System.Drawing.FontStyle.Bold);
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(33, 59);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(274, 71);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Home";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(33, 611);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(61, 65);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 18;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(33, 540);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(61, 65);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 19;
+            this.pictureBox10.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Black;
+            this.button3.Font = new System.Drawing.Font("Castellar", 13.8F, System.Drawing.FontStyle.Bold);
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(33, 241);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(274, 71);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "tatlılar";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Black;
+            this.button2.Font = new System.Drawing.Font("Castellar", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(33, 151);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(274, 71);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Fast Food";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.Font = new System.Drawing.Font("Castellar", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(33, 329);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(274, 71);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Deniz Ürünleri";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label45);
@@ -238,7 +345,7 @@
             this.groupBox1.Controls.Add(this.panel5);
             this.groupBox1.Controls.Add(this.panel6);
             this.groupBox1.Controls.Add(this.label37);
-            this.groupBox1.Location = new System.Drawing.Point(0, 15);
+            this.groupBox1.Location = new System.Drawing.Point(579, 59);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(747, 662);
             this.groupBox1.TabIndex = 26;
@@ -1012,113 +1119,6 @@
             this.label37.TabIndex = 64;
             this.label37.Text = "adet";
             // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.Goldenrod;
-            this.button10.ForeColor = System.Drawing.Color.Gold;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.Location = new System.Drawing.Point(159, 565);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(42, 40);
-            this.button10.TabIndex = 63;
-            this.button10.Text = ".";
-            this.button10.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Black;
-            this.button5.Font = new System.Drawing.Font("Castellar", 13.8F, System.Drawing.FontStyle.Bold);
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(33, 427);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(274, 71);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Hakkımızda";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(33, 695);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(61, 65);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 20;
-            this.pictureBox9.TabStop = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Black;
-            this.button4.Font = new System.Drawing.Font("Castellar", 13.8F, System.Drawing.FontStyle.Bold);
-            this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(33, 59);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(274, 71);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Home";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(33, 611);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(61, 65);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 18;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(33, 540);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(61, 65);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 19;
-            this.pictureBox10.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Black;
-            this.button3.Font = new System.Drawing.Font("Castellar", 13.8F, System.Drawing.FontStyle.Bold);
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(33, 241);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(274, 71);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "tatlılar";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Black;
-            this.button2.Font = new System.Drawing.Font("Castellar", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(33, 151);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(274, 71);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Fast Food";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Black;
-            this.button1.Font = new System.Drawing.Font("Castellar", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(33, 329);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(274, 71);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Deniz Ürünleri";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Crimson;
@@ -1163,7 +1163,6 @@
             // 
             // v
             // 
-            this.v.Controls.Add(this.groupBox1);
             this.v.Controls.Add(this.panel9);
             this.v.Controls.Add(this.panel7);
             this.v.Controls.Add(this.panel8);
@@ -1426,6 +1425,50 @@
             this.panel7.Size = new System.Drawing.Size(226, 588);
             this.panel7.TabIndex = 24;
             // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label57.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label57.Location = new System.Drawing.Point(129, 533);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(71, 28);
+            this.label57.TabIndex = 60;
+            this.label57.Text = "18,99";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label58.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label58.Location = new System.Drawing.Point(30, 533);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(66, 28);
+            this.label58.TabIndex = 59;
+            this.label58.Text = "adet";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label59.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label59.Location = new System.Drawing.Point(129, 498);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(71, 28);
+            this.label59.TabIndex = 58;
+            this.label59.Text = "18,99";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label60.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label60.Location = new System.Drawing.Point(30, 498);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(62, 28);
+            this.label60.TabIndex = 57;
+            this.label60.Text = "fiyat";
+            // 
             // label34
             // 
             this.label34.AutoSize = true;
@@ -1607,6 +1650,50 @@
             this.panel8.Size = new System.Drawing.Size(235, 588);
             this.panel8.TabIndex = 23;
             // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label53.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label53.Location = new System.Drawing.Point(115, 533);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(71, 28);
+            this.label53.TabIndex = 60;
+            this.label53.Text = "18,99";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label54.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label54.Location = new System.Drawing.Point(16, 533);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(66, 28);
+            this.label54.TabIndex = 59;
+            this.label54.Text = "adet";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label55.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label55.Location = new System.Drawing.Point(115, 498);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(71, 28);
+            this.label55.TabIndex = 58;
+            this.label55.Text = "18,99";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label56.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label56.Location = new System.Drawing.Point(16, 498);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(62, 28);
+            this.label56.TabIndex = 57;
+            this.label56.Text = "fiyat";
+            // 
             // button13
             // 
             this.button13.BackColor = System.Drawing.Color.Goldenrod;
@@ -1764,94 +1851,6 @@
             this.label72.TabIndex = 19;
             this.label72.Text = "SALAMUN";
             // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label53.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label53.Location = new System.Drawing.Point(115, 533);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(71, 28);
-            this.label53.TabIndex = 60;
-            this.label53.Text = "18,99";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label54.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label54.Location = new System.Drawing.Point(16, 533);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(66, 28);
-            this.label54.TabIndex = 59;
-            this.label54.Text = "adet";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label55.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label55.Location = new System.Drawing.Point(115, 498);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(71, 28);
-            this.label55.TabIndex = 58;
-            this.label55.Text = "18,99";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label56.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label56.Location = new System.Drawing.Point(16, 498);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(62, 28);
-            this.label56.TabIndex = 57;
-            this.label56.Text = "fiyat";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label57.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label57.Location = new System.Drawing.Point(129, 533);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(71, 28);
-            this.label57.TabIndex = 60;
-            this.label57.Text = "18,99";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label58.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label58.Location = new System.Drawing.Point(30, 533);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(66, 28);
-            this.label58.TabIndex = 59;
-            this.label58.Text = "adet";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label59.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label59.Location = new System.Drawing.Point(129, 498);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(71, 28);
-            this.label59.TabIndex = 58;
-            this.label59.Text = "18,99";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label60.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label60.Location = new System.Drawing.Point(30, 498);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(62, 28);
-            this.label60.TabIndex = 57;
-            this.label60.Text = "fiyat";
-            // 
             // FastFoodUrunleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1859,6 +1858,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1351, 841);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.v);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -1869,6 +1869,9 @@
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -1883,9 +1886,6 @@
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);

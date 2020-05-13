@@ -50,6 +50,8 @@
             this.KayidVar_Btn = new System.Windows.Forms.Button();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
@@ -257,7 +259,7 @@
             this.sartlar_checkbox.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
             this.sartlar_checkbox.Font = new System.Drawing.Font("MV Boli", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sartlar_checkbox.ForeColor = System.Drawing.Color.White;
-            this.sartlar_checkbox.Location = new System.Drawing.Point(553, 637);
+            this.sartlar_checkbox.Location = new System.Drawing.Point(568, 710);
             this.sartlar_checkbox.Margin = new System.Windows.Forms.Padding(4);
             this.sartlar_checkbox.Name = "sartlar_checkbox";
             this.sartlar_checkbox.Size = new System.Drawing.Size(20, 20);
@@ -268,7 +270,7 @@
             this.sartlar_txt.AutoSize = true;
             this.sartlar_txt.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sartlar_txt.ForeColor = System.Drawing.Color.Crimson;
-            this.sartlar_txt.Location = new System.Drawing.Point(597, 630);
+            this.sartlar_txt.Location = new System.Drawing.Point(612, 703);
             this.sartlar_txt.Name = "sartlar_txt";
             this.sartlar_txt.Size = new System.Drawing.Size(370, 27);
             this.sartlar_txt.TabIndex = 13;
@@ -281,7 +283,7 @@
             this.KayitOl_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.KayitOl_Btn.Font = new System.Drawing.Font("Bahnschrift Condensed", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.KayitOl_Btn.ForeColor = System.Drawing.Color.Crimson;
-            this.KayitOl_Btn.Location = new System.Drawing.Point(550, 684);
+            this.KayitOl_Btn.Location = new System.Drawing.Point(555, 747);
             this.KayitOl_Btn.Name = "KayitOl_Btn";
             this.KayitOl_Btn.Size = new System.Drawing.Size(450, 53);
             this.KayitOl_Btn.TabIndex = 14;
@@ -294,7 +296,7 @@
             this.KayidVar_Btn.BackColor = System.Drawing.Color.Black;
             this.KayidVar_Btn.Font = new System.Drawing.Font("Bahnschrift Condensed", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.KayidVar_Btn.ForeColor = System.Drawing.Color.Crimson;
-            this.KayidVar_Btn.Location = new System.Drawing.Point(550, 770);
+            this.KayidVar_Btn.Location = new System.Drawing.Point(555, 806);
             this.KayidVar_Btn.Name = "KayidVar_Btn";
             this.KayidVar_Btn.Size = new System.Drawing.Size(450, 55);
             this.KayidVar_Btn.TabIndex = 15;
@@ -323,12 +325,33 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "TELEFON NO";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Baskerville Old Face", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Crimson;
+            this.label6.Location = new System.Drawing.Point(545, 611);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(146, 27);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Adres Bilgisi";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(546, 641);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(448, 52);
+            this.richTextBox1.TabIndex = 19;
+            this.richTextBox1.Text = "";
+            // 
             // kayıt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1061, 861);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.KayidVar_Btn);
@@ -382,6 +405,8 @@
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label sartlar_txt;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 
