@@ -15,9 +15,10 @@ namespace WindowsFormsApp18.Properties
         public float yag { get; set; }
         public float kolesterol { get; set; }
         public float sodyum { get; set; }
+        public float sekerorani { get; set; }
         public string alarji_yapabilecek_urunler { get; set; }
 
-        List<Yemekler> siparislerim;
+        readonly List<Yemekler> siparislerim;
         private double fiyat { get; set; }
         public void setFiyat(double _fiyat)
         {
@@ -30,27 +31,36 @@ namespace WindowsFormsApp18.Properties
         }
         public double getFiyat()
         {
-            return fiyat;
+            
+            return fiyat= Math.Round(fiyat, 2);  // g'rm'; oldu[um float sayinin basamaktan sonra sadece iki sayıyı gösterir 
         }
 
-        public void setAgirlik(float agr)
+        public void setAgirlik(float gr)
         {
-            this.agirlik = agr;
+            this.agirlik =gr;
         }
 
         public string getAgirlik()
         {
-            return agirlik + " Gr";
+            return agirlik + " gr";
         }
 
         public string getYag()
         {
-            return yag + " L";
+            return yag + " gr";
         }
 
+        public string getkolestirol()
+        {
+            return kolesterol + " gr";
+        }
         public string getProten()
         {
             return protein + " Ml";
+        }
+        public string getsekerorani()
+        {
+            return sekerorani + " gr";
         }
 
         public void setKalori(float kal)

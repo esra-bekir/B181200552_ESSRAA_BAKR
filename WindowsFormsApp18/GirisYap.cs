@@ -49,10 +49,7 @@ namespace WindowsFormsApp18
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+       
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
@@ -74,12 +71,23 @@ namespace WindowsFormsApp18
 
         }
 
+       
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            kayıt git = new kayıt();// eğer kullanıcı kayıdım var butonuna yanılşlıkla girmişse 
-            this.Hide();            //tekrar kayıt ol sayfasına geri dönmesine sağlar
-            git.Show();
+            Application.Exit();
+        }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            kayıt yeni = new kayıt();
+            this.Hide();
+            yeni.Show();
         }
     }
 }

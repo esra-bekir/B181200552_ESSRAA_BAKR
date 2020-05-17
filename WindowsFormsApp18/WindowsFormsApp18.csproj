@@ -79,12 +79,6 @@
     <Compile Include="FastFoodUrunleri.Designer.cs">
       <DependentUpon>FastFoodUrunleri.cs</DependentUpon>
     </Compile>
-    <Compile Include="DenizUrunleri.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DenizUrunleri.Designer.cs">
-      <DependentUpon>DenizUrunleri.cs</DependentUpon>
-    </Compile>
     <Compile Include="Sepet.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,14 +96,8 @@
     <EmbeddedResource Include="Hakkimizda.resx">
       <DependentUpon>Hakkimizda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FastFoodUrunleri.resx">
       <DependentUpon>FastFoodUrunleri.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DenizUrunleri.resx">
-      <DependentUpon>DenizUrunleri.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sepet.resx">
       <DependentUpon>Sepet.cs</DependentUpon>
@@ -119,12 +107,6 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Properties\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>

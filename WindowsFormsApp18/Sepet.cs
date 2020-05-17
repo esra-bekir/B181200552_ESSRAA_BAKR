@@ -27,36 +27,56 @@ namespace WindowsFormsApp18.Properties
     public partial class Sepet : Form
     {
 
-
-        public Sepet()
+        DataTable dtsiparisler;
+        public Sepet(DataTable dt)
         {
+           
+            this.dtsiparisler = dt;
             InitializeComponent();
           
         }
 
-        private void button1_Click(object sender, EventArgs e)
+            private void button1_Click_1(object sender, EventArgs e)
         {
+            MessageBox.Show("Siparişiniz Başarıyla Alınmıştır en kısa sürede size ulaşacaktır=) \n Afiyet Olsun.");
+            Application.Exit();
+        }
+
+  
+
+
+        private void Sepet_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = dtsiparisler;//siparişlerin yada seçilen ürünlerin sepette gözükmesine sağlar
+
+            Random rnd = new Random();//fatura numarası
+            listBox1.Items.Add(rnd.Next(256485, 12569856));
+            
+
 
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+       
+
+        private void button2_Click(object sender, EventArgs e)
         {
+           
             
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+      
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Para Odeme Islemi Tamamlandi \n Afiyet Olsun.");
+
+           
+
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void button2_Click_1(object sender, EventArgs e)
         {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
+            FastFoodUrunleri yenii = new FastFoodUrunleri();
+            this.Hide();
+            yenii.Show();
         }
     }
 }

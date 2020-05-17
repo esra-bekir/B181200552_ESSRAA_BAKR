@@ -42,7 +42,6 @@
             this.sifre_box = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.sifre_tekrarlama_box = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuMaterialTextbox4 = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.closeBtn = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.sartlar_checkbox = new Bunifu.Framework.UI.BunifuCheckbox();
             this.sartlar_txt = new System.Windows.Forms.Label();
@@ -52,9 +51,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -66,7 +66,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(539, 861);
+            this.panel1.Size = new System.Drawing.Size(535, 861);
             this.panel1.TabIndex = 0;
             // 
             // label8
@@ -240,17 +240,6 @@
             this.bunifuMaterialTextbox4.Text = "sameone@gmail.com";
             this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
-            // closeBtn
-            // 
-            this.closeBtn.Image = ((System.Drawing.Image)(resources.GetObject("closeBtn.Image")));
-            this.closeBtn.Location = new System.Drawing.Point(998, 12);
-            this.closeBtn.Name = "closeBtn";
-            this.closeBtn.Size = new System.Drawing.Size(51, 45);
-            this.closeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.closeBtn.TabIndex = 11;
-            this.closeBtn.TabStop = false;
-            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
-            // 
             // sartlar_checkbox
             // 
             this.sartlar_checkbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(205)))), ((int)(((byte)(117)))));
@@ -344,12 +333,24 @@
             this.richTextBox1.TabIndex = 19;
             this.richTextBox1.Text = "";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(1003, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 46);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // kayıt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1061, 861);
+            this.ClientSize = new System.Drawing.Size(1063, 861);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label9);
@@ -358,7 +359,6 @@
             this.Controls.Add(this.KayitOl_Btn);
             this.Controls.Add(this.sartlar_txt);
             this.Controls.Add(this.sartlar_checkbox);
-            this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.bunifuMaterialTextbox4);
             this.Controls.Add(this.sifre_tekrarlama_box);
             this.Controls.Add(this.sifre_box);
@@ -373,10 +373,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "kayıt";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.kayıt_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.closeBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -395,7 +396,6 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox sifre_box;
         private Bunifu.Framework.UI.BunifuMaterialTextbox sifre_tekrarlama_box;
         private Bunifu.Framework.UI.BunifuMaterialTextbox bunifuMaterialTextbox4;
-        private System.Windows.Forms.PictureBox closeBtn;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private Bunifu.Framework.UI.BunifuCheckbox sartlar_checkbox;
         private System.Windows.Forms.Button KayitOl_Btn;
@@ -407,6 +407,7 @@
         private System.Windows.Forms.Label sartlar_txt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

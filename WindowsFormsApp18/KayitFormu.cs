@@ -28,13 +28,24 @@ namespace WindowsFormsApp18
         public kayıt()
         {
             InitializeComponent();
+
         }
+
+        // Kayit Var Bottunu Basinca
+        private void KayidVar_Btn_Click(object sender, EventArgs e)
+        {
+            GirisYap KayitForm = new GirisYap();
+            KayitForm.Show();
+            this.Hide();
+        }
+
         // Program Kapatma metodu
-        private void closeBtn_Click(object sender, EventArgs e)
+       
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         // Giris Yap Bottunu Basinca
         private void KayitOl_Btn_Click(object sender, EventArgs e)
         {
@@ -73,13 +84,7 @@ namespace WindowsFormsApp18
             }
            
         }
-        // Kayit Var Bottunu Basinca
-        private void KayidVar_Btn_Click(object sender, EventArgs e)
-        {
-            GirisYap KayitForm = new GirisYap();
-            KayitForm.Show();
-            this.Hide(); 
-        }
+       
 
         private void sartlar_txt_Click(object sender, EventArgs e)
         {
@@ -92,5 +97,12 @@ namespace WindowsFormsApp18
                 sartlar_checkbox.Checked = true;
             }
         }
+
+        private void kayıt_Load(object sender, EventArgs e)
+        {
+
+        }
+
+      
     }
 }

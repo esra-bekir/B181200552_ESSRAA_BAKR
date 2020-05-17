@@ -12,8 +12,18 @@ namespace WindowsFormsApp18.Properties
         public string yapılış_tarihi { get; set; }
         public string vitamenA { get; set; }
 
+        public string getvitamenA()
+        {
+            return vitamenA + " IU";
+        }
+        public string   getyapılış_tarihi()
+        {
+            return yapılış_tarihi +DateTime.Today.ToString() ;
+        }
 
-
-
+        public string getşekeroranı()
+        {
+            return şekeroranı + " gr";
+        }
     }
 }

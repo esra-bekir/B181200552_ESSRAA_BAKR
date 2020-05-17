@@ -21,6 +21,6 @@ namespace WindowsFormsApp18.Properties
 {
     class DenizUrunleri : Yemekler
     {
-
+       
     }
 }
