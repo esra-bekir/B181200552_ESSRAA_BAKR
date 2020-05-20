@@ -69,6 +69,11 @@
     <Compile Include="Hakkimizda.Designer.cs">
       <DependentUpon>Hakkimizda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Localization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Localization.resx</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\DenizYemekleri.cs" />
@@ -78,6 +83,16 @@
     </Compile>
     <Compile Include="FastFoodUrunleri.Designer.cs">
       <DependentUpon>FastFoodUrunleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
     </Compile>
     <Compile Include="Sepet.cs">
       <SubType>Form</SubType>
@@ -99,6 +114,21 @@
     <EmbeddedResource Include="FastFoodUrunleri.resx">
       <DependentUpon>FastFoodUrunleri.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Localization.en-US.resx" />
+    <EmbeddedResource Include="Localization.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Localization.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource.en-US.resx" />
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resource1.en-US.resx" />
     <EmbeddedResource Include="Sepet.resx">
       <DependentUpon>Sepet.cs</DependentUpon>
     </EmbeddedResource>

@@ -20,7 +20,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp18.Properties;
-
+using System.Globalization;
+using System.Threading;
 namespace WindowsFormsApp18
 {
     public partial class kayıt : System.Windows.Forms.Form
@@ -28,6 +29,27 @@ namespace WindowsFormsApp18
         public kayıt()
         {
             InitializeComponent();
+
+        }
+        public void diller(string culture)
+        {
+            Thread.CurrentThread.CurrentUICulture.ClearCachedData();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(culture);
+
+            label1.Text = Localization.label1;
+            label3.Text = Localization.label3;
+            label4.Text = Localization.label4;
+            label5.Text = Localization.label5;
+            label6.Text = Localization.label6;
+            label9.Text = Localization.label9;
+            sartlar_txt.Text = Localization.sartlar_txt;
+            KayitOl_Btn.Text = Localization.KayidVar_Btn;
+            KayidVar_Btn.Text = Localization.KayidVar_Btn;
+            button2.Text = Localization.button2;
+            button1.Text = Localization.button1;
+
+
+
 
         }
 
@@ -103,6 +125,14 @@ namespace WindowsFormsApp18
 
         }
 
-      
+        private void button1_Click(object sender, EventArgs e)
+        {
+            diller("en-US");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            diller("");
+        }
     }
 }

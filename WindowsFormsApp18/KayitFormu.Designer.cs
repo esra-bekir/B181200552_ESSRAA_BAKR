@@ -52,6 +52,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -120,9 +122,9 @@
             this.label1.ForeColor = System.Drawing.Color.Crimson;
             this.label1.Location = new System.Drawing.Point(545, 307);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 27);
+            this.label1.Size = new System.Drawing.Size(187, 27);
             this.label1.TabIndex = 3;
-            this.label1.Text = "TEKRAR PASOWRD";
+            this.label1.Text = "TEKRAR ŞİFRE";
             // 
             // label3
             // 
@@ -132,9 +134,9 @@
             this.label3.ForeColor = System.Drawing.Color.Crimson;
             this.label3.Location = new System.Drawing.Point(545, 211);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 27);
+            this.label3.Size = new System.Drawing.Size(77, 27);
             this.label3.TabIndex = 4;
-            this.label3.Text = "PASWORD";
+            this.label3.Text = "ŞİFRE";
             // 
             // label4
             // 
@@ -344,12 +346,38 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Black;
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(871, 47);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(78, 40);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "EN";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Black;
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(784, 47);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(70, 40);
+            this.button2.TabIndex = 19;
+            this.button2.Text = "TR";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // kayıt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1063, 861);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label6);
@@ -408,6 +436,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
 

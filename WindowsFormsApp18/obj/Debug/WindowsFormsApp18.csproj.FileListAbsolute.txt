@@ -32,3 +32,11 @@ C:\Users\isra bekir\Documents\GitHub\B181200552_ESSRAA_BAKR\WindowsFormsApp18\bi
 C:\Users\isra bekir\Documents\GitHub\B181200552_ESSRAA_BAKR\WindowsFormsApp18\bin\Debug\WindowsFormsApp18.pdb
 C:\Users\isra bekir\Documents\GitHub\B181200552_ESSRAA_BAKR\WindowsFormsApp18\bin\Debug\Bunifu_UI_v1.5.3.dll
 C:\Users\isra bekir\Documents\GitHub\B181200552_ESSRAA_BAKR\WindowsFormsApp18\obj\Debug\WindowsFormsApp18.csproj.CopyComplete
+C:\Users\isra bekir\Documents\GitHub\B181200552_ESSRAA_BAKR\WindowsFormsApp18\obj\Debug\WindowsFormsApp18.Localization.resources
+C:\Users\isra bekir\Documents\GitHub\B181200552_ESSRAA_BAKR\WindowsFormsApp18\bin\Debug\en-US\WindowsFormsApp18.resources.dll
+C:\Users\isra bekir\Documents\GitHub\B181200552_ESSRAA_BAKR\WindowsFormsApp18\obj\Debug\WindowsFormsApp18.Localization.en-US.resources
+C:\Users\isra bekir\Documents\GitHub\B181200552_ESSRAA_BAKR\WindowsFormsApp18\obj\Debug\en-US\WindowsFormsApp18.resources.dll
+C:\Users\isra bekir\Documents\GitHub\B181200552_ESSRAA_BAKR\WindowsFormsApp18\obj\Debug\WindowsFormsApp18.Resource.resources
+C:\Users\isra bekir\Documents\GitHub\B181200552_ESSRAA_BAKR\WindowsFormsApp18\obj\Debug\WindowsFormsApp18.Resource.en-US.resources
+C:\Users\isra bekir\Documents\GitHub\B181200552_ESSRAA_BAKR\WindowsFormsApp18\obj\Debug\WindowsFormsApp18.Resource1.resources
+C:\Users\isra bekir\Documents\GitHub\B181200552_ESSRAA_BAKR\WindowsFormsApp18\obj\Debug\WindowsFormsApp18.Resource1.en-US.resources

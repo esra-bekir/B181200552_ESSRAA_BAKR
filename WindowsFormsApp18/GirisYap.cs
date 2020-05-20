@@ -20,6 +20,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
 using WindowsFormsApp18.Properties;
 
 namespace WindowsFormsApp18
@@ -29,6 +31,17 @@ namespace WindowsFormsApp18
         public GirisYap()
         {
             InitializeComponent();
+        }
+        public void diller(string culturee)
+        {
+            Thread.CurrentThread.CurrentUICulture.ClearCachedData();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(culturee);
+            
+            label2.Text = Resource.label2;
+            checkBox1.Text = Resource.checkBox1;
+            button1.Text = Resource.button1;
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -88,6 +101,16 @@ namespace WindowsFormsApp18
             kayıt yeni = new kayıt();
             this.Hide();
             yeni.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            diller("en-US");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            diller("");
         }
     }
 }

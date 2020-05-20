@@ -19,6 +19,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
+using System.Threading;
 using System.IO;
 using System.Drawing.Text;
 
@@ -35,6 +37,74 @@ namespace WindowsFormsApp18.Properties
             InitializeComponent();
         }
 
+        public void diller(string culture)
+        {
+            Thread.CurrentThread.CurrentUICulture.ClearCachedData();// EN_ TR ÇEVRİ
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo(culture);
+
+            label72.Text = Resource1.label72;
+            label76.Text = Resource1.label76;
+            label78.Text = Resource1.label78;
+            label73.Text = Resource1.label73;
+            label79.Text = Resource1.label79;
+            label49.Text = Resource1.label49;
+            label44.Text = Resource1.label44;
+            label61.Text = Resource1.label61;
+            label64.Text = Resource1.label64;
+            label69.Text = Resource1.label69;
+            button3.Text = Resource1.button3;
+            button1.Text = Resource1.button1;
+            button5.Text = Resource1.button5;
+            label31.Text = Resource1.label31;
+            label32.Text = Resource1.label32;
+            label131.Text = Resource1.label31;
+            label35.Text = Resource1.label35;
+            label34.Text = Resource1.label34;
+            label87.Text = Resource1.label87;
+            label113.Text = Resource1.label113;
+            label112.Text = Resource1.label112;
+            label80.Text = Resource1.label80;
+            label105.Text = Resource1.label105;
+            label126.Text = Resource1.label126;
+            label136.Text = Resource1.label136;
+            label184.Text = Resource1.label184;
+            label193.Text = Resource1.label193;
+            label204.Text = Resource1.label204;
+            label128.Text = Resource1.label128;
+            label107.Text = Resource1.label107;
+            label147.Text = Resource1.label147;
+            label186.Text = Resource1.label186;
+            label195.Text = Resource1.label195;
+            label206.Text = Resource1.label206;
+            label123.Text = Resource1.label123;
+            label102.Text = Resource1.label102;
+            label97.Text = Resource1.label97;
+            label181.Text = Resource1.label181;
+            label190.Text = Resource1.label190;
+            label201.Text = Resource1.label201;
+            label121.Text = Resource1.label121;
+            label175.Text = Resource1.label175;
+            label145.Text = Resource1.label145;
+            label116.Text = Resource1.label116; 
+            label91.Text = Resource1.label91;
+            label122.Text = Resource1.label122;
+            label161.Text = Resource1.label161;
+            label177.Text = Resource1.label177;
+            label146.Text = Resource1.label146;
+            label117.Text = Resource1.label117;
+            label53.Text = Resource1.label53;
+            label148.Text = Resource1.label148;
+            label110.Text = Resource1.label110;
+            label69.Text = Resource1.label69;
+            label197.Text = Resource1.label197;
+            label196.Text = Resource1.label196;
+            label207.Text = Resource1.label207;
+         
+
+
+
+
+        }
         private void pictureBox8_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -971,6 +1041,16 @@ namespace WindowsFormsApp18.Properties
         private void pictureBox8_Click_3(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            diller("");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            diller("en-US");
         }
     }
 }
